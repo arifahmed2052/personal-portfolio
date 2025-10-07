@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Arif Ahmed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .experience-card {
+            position: relative;
+        }
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 4px solid #bfdbfe;
+        }
+        .experience-card::after {
+            content: '';
+            position: absolute;
+            left: -22px;
+            top: 16px;
+            bottom: -16px;
+            width: 2px;
+            background: #bfdbfe;
+        }
+        .experience-card:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-blue-600 font-bold text-xl">AA</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="experience.html" class="text-blue-600 font-medium">Experience</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-blue-600 transition">Projects</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience Hero -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Experience</h1>
+            <p class="text-xl max-w-3xl mx-auto">My journey in technology and data analytics</p>
+        </div>
+    </section>
+
+    <!-- Resume Download -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto bg-blue-50 rounded-xl p-8">
+                <h2 class="text-2xl font-bold mb-4">Download My Resume</h2>
+                <p class="text-gray-600 mb-6">Get a complete overview of my experience and qualifications</p>
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition flex items-center mx-auto">
+                    <i data-feather="download" class="mr-2"></i> Download Resume (PDF)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12">Work Experience</h2>
+            
+            <div class="relative pl-12 space-y-12">
+                <div class="experience-card">
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold">Technical Operations Manager</h3>
+                                <p class="text-blue-600">Rutgers University – Busch Student Center</p>
+                            </div>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm mt-2 md:mt-0">2022 – Present</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Manage 37,000 sq. ft. student center operations</span>
+                            </li>
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Oversee team of 30 employees supporting 5,000+ annual events</span>
+                            </li>
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Troubleshoot and maintain audio/visual equipment and IT infrastructure</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold">Data Analyst</h3>
+                                <p class="text-blue-600">Morden Code Hub</p>
+                            </div>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm mt-2 md:mt-0">2023 – Present</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Built Azure ETL pipelines for data processing and transformation</span>
+                            </li>
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Developed interactive Power BI dashboards for business insights</span>
+                            </li>
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Improved data accuracy and reporting efficiency by 40%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold">Team Lead</h3>
+                                <p class="text-blue-600">The Commencement Group</p>
+                            </div>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm mt-2 md:mt-0">2022 – 2025</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Led sales and logistics teams for large-scale events</span>
+                            </li>
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Exceeded sales goals by 25% through strategic planning</span>
+                            </li>
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Managed public events with 1,000+ attendees</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold">Developer & IT Support Specialist</h3>
+                                <p class="text-blue-600">RASOFT TECH</p>
+                            </div>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm mt-2 md:mt-0">2022 – 2024</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Developed web and e-commerce applications for clients</span>
+                            </li>
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Managed client technical support and troubleshooting</span>
+                            </li>
+                            <li class="flex">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                                <span>Improved website accessibility and user experience</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Expertise</h2>
+            
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium">Data Analysis</span>
+                        <span class="text-gray-500">Advanced</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium">Power BI</span>
+                        <span class="text-gray-500">Advanced</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-blue-600 h-3 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium">Python</span>
+                        <span class="text-gray-500">Intermediate</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-blue-600 h-3 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium">Azure</span>
+                        <span class="text-gray-500">Intermediate</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-blue-600 h-3 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium">SQL</span>
+                        <span class="text-gray-500">Advanced</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-blue-600 h-3 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium">Web Development</span>
+                        <span class="text-gray-500">Intermediate</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-blue-600 h-3 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-blue-400 font-bold text-xl">AA</a>
+                    <p class="mt-2 text-gray-400">© 2023 Arif Ahmed. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
